@@ -3,7 +3,7 @@
 @import "font-awesome";
 
 body {
-    background: image_url('little_triangles.png');
+    background: image_url('circles-light.png');
     font-family: Frutiger,
         "Frutiger Linotype",
         Univers,
@@ -45,4 +45,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 15px;
     padding: 20px;
+}
+.invalid-feedback {
+    color: #ff3333;
+    background-color: #FFEEEE;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
 }
