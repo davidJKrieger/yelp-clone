@@ -75,3 +75,7 @@ gem "font-awesome-rails"
 gem 'devise'
 gem "geocoder"
 gem "figaro"
+gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
+gem 'will_paginate', '~> 3.1'
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
+gem 'will_paginate-bootstrap4', '~> 0.2.2'

@@ -1,38 +1,42 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-@import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Corben:700|Nobile:400,400i,500,700,700i&display=swap');
+
+// font-family: 'Bangers', cursive;
+// font-family: 'Work Sans', sans-serif;
+//font-family: 'Chelsea Market', cursive;
+//font-family: 'Corben', cursive;
+//font-family: 'Nobile', sans-serif;
 
 body {
-    background: image_url('circles-light.png');
-    font-family: Frutiger,
-        "Frutiger Linotype",
-        Univers,
-        Calibri,
-        "Gill Sans",
-        "Gill Sans MT",
-        "Myriad Pro",
-        Myriad,
-        "DejaVu Sans Condensed",
-        "Liberation Sans",
-        "Nimbus Sans L",
-        Tahoma,
-        Geneva,
-        "Helvetica Neue",
-        Helvetica,
-        Arial,
-        sans-serif;
+    background: image_url('bg.png');
+
 }
 .navbar {
-    background: image_url('dark-triangles.png');
+    background: image_url('nav-bar.png');
     box-shadow: 0px 1px 3px #2a2a2a;
 }
 .navbar-inverse .navbar-brand {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: red;
+    font-family: 'Corben', cursive;
+    color: goldenrod;
+    letter-spacing: .1em;
+}
+h1 {
+    font-family: 'Nobile', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+}
+a {
+    color: darkolivegreen;
+}
+a:hover {
+    text-decoration: none;
+    color: goldenrod;
 }
 
 .booyah-box {
@@ -53,9 +57,185 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2px 8px 2px 8px;
 }
 
+.clear {
+    clear: both;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #41bad8;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.page-item.active .page-link {
+    z-index: 2;
+    color: #fff;
+    background-color: #41bad8;
+    border-color: #41bad8;
+}
+
+.btn-secondary {
+    color: #41bad8;
+    background-color: #fff;
+    border-color: #ddd;
+    margin-left: 4px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.invalid-feedback {
+    color: #ff3333;
+    background-color: #FFEEEE;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+}
+
 #map {
     height: 300px;
 }
-.clear {
-    clear: both;
+
+.comment {
+    background: #f2f2f2;
+    border-left: 6px solid #41bad8;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D";
+}
+
+.comment:before {
+    color: #41bad8;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.comment p {
+    display: inline;
+}
+
+.show-image-size {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-image-size {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    color: #ddd;
+    background-color: #ddd;
+    width: 60%;
+}
+
+.photo {
+    margin-top: 20px;
+}
+
+.photo-display {
+    background: #fff;
+    padding: .25rem;
+    margin-bottom: 2rem;
+    quotes: "\201C""\201D";
+    text-align: center;
+}
+
+.photo-display p {
+    display: inline;
+}
+
+.photos-index {
+    width: 100%;
+    height: auto;
+    padding: .25rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    position: relative;
+    margin: 0;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.carousel-inner>.carousel-item>img,
+.carousel-inner>.carousel-item>a>img {
+    max-height: 480px;
+    width: 100%;
+    
+}
+
+.carousel-item.active,
+.carousel-item-next,
+carousel-item-prev {
+    display: block;
+}
+
+.carousel-caption {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-weight: 100px;
+    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    position: abdsolute;
+    left: 0
+}
+
+.carousel {
+    box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    align: center;
+}
+
+.user-info {
+    padding-top: 2%;
+    padding-left: 20px;
 }
